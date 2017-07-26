@@ -1,0 +1,12 @@
+DATE         = `date +%Y-%m-%d@%H:%M:%S`
+
+DFLAGS       += -DBUILD_WITH_WHINE              #modify
+DFLAGS       += -DHAVE_STDIO_EXT_H              #modify
+DFLAGS       += -DPACKAGE_NAME=\"raft_cluster\" #modify
+DFLAGS       += -DPACKAGE_VERSION=\"1.0.1\"     #modify
+DFLAGS       += -DBUILT_DATE=\"$(DATE)\"        #modify
+DFLAGS       += -DLOCALEDIR=\"$(PWD)\"          #modify
+DFLAGS       += -DDATADIR=\"$(PWD)\/data\"      #modify
+DFLAGS       += -DLOG2STDOUT                    #modify 
+DFLAGS       += -DBUILD_4_RAFT_CLUSTER          #modify
+
